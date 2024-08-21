@@ -2,7 +2,7 @@
  - passing all tests in <a href="https://datatracker.ietf.org/doc/html/rfc7541">RFC7541</a>
  - zig 0.13
 
-```
+```zig
 test {
     const allocator = std.testing.allocator;
     var ctx = try hpack.HpackContext(std.hash.Wyhash).init(allocator, 256);
